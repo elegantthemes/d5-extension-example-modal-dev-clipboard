@@ -12,16 +12,16 @@ class D5I_HelloWorld extends ET_Builder_Module {
 	);
 
 	public function init() {
-		$this->name = esc_html__( 'Hello World', 'd5i-d5i-modal-dev-clipboard' );
+		$this->name = esc_html__( 'Hello World', 'd5i-modal-dev-clipboard' );
 	}
 
 	public function get_fields() {
 		return array(
 			'content' => array(
-				'label'           => esc_html__( 'Content', 'd5i-d5i-modal-dev-clipboard' ),
+				'label'           => esc_html__( 'Content', 'd5i-modal-dev-clipboard' ),
 				'type'            => 'tiny_mce',
 				'option_category' => 'basic_option',
-				'description'     => esc_html__( 'Content entered here will appear inside the module.', 'd5i-d5i-modal-dev-clipboard' ),
+				'description'     => esc_html__( 'Content entered here will appear inside the module.', 'd5i-modal-dev-clipboard' ),
 				'toggle_slug'     => 'main_content',
 			),
 		);

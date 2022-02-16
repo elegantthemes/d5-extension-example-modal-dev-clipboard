@@ -9,7 +9,7 @@ class D5I_D5IModalDevClipboard extends DiviExtension {
 	 *
 	 * @var string
 	 */
-	public $gettext_domain = 'd5i-d5i-modal-dev-clipboard';
+	public $gettext_domain = 'd5i-modal-dev-clipboard';
 
 	/**
 	 * The extension's WP Plugin name.

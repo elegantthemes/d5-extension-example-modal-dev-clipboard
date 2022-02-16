@@ -1,14 +1,14 @@
 <?php
 /*
 Plugin Name: D5i Modal Dev Clipboard
-Plugin URI:  
+Plugin URI:
 Description: Modal that displays clipboard data
 Version:     1.0.0
 Author:      Elegant Themes
 Author URI:  https://elegantthemes.com
 License:     GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: d5i-d5i-modal-dev-clipboard
+Text Domain: d5i-modal-dev-clipboard
 Domain Path: /languages
 
 D5i Modal Dev Clipboard is free software: you can redistribute it and/or modify
