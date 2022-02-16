@@ -37,3 +37,23 @@ function d5i_initialize_extension() {
 }
 add_action( 'divi_extensions_init', 'd5i_initialize_extension' );
 endif;
+
+x/**
+ * Add custom item on admin bar for `Clipboard`
+ *
+ * @since ??
+ *
+ */
+function d5i_admin_bar_modal_link( $admin_bar ) {
+
+	// Only display this admin bar item on D5i Visual Builder.
+	if ( et_builder_d5_enabled() && et_core_is_fb_enabled() ) {
+    $args = array(
+        'id'    => 'd5i-modal-dev-clipboard',
+        'title' => 'Clipboard',
+        'href'  => '#d5i-clipboard'
+    );
+    $admin_bar->add_node($args);
+	}
+}
+add_action( 'admin_bar_menu', 'd5i_admin_bar_modal_link', 600 );
