@@ -38,7 +38,7 @@ function d5i_initialize_extension() {
 add_action( 'divi_extensions_init', 'd5i_initialize_extension' );
 endif;
 
-x/**
+/**
  * Add custom item on admin bar for `Clipboard`
  *
  * @since ??
