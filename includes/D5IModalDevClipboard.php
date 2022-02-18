@@ -41,6 +41,20 @@ class D5I_D5IModalDevClipboard extends DiviExtension {
 
 		parent::__construct( $name, $args );
 	}
+
+	/**
+	 * Sets bundle dependencies.
+	 *
+	 * @since 1.0.0
+	 */
+	protected function _set_bundle_dependencies() {
+		$this->_bundle_dependencies = array(
+			// Extension bundle need to be outputted after Divi Builder's script so all the
+			// prerequisite scripts have been available.
+			'builder'  => array( 'et-frontend-builder' ),
+			'frontend' => array(),
+		);
+	}
 }
 
 new D5I_D5IModalDevClipboard;
