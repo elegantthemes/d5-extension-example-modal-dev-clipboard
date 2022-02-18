@@ -1,19 +1,9 @@
-// External Dependencies
-import $ from 'jquery';
-
 // Internal Dependencies
-import modules from './modules';
-import fields from './fields';
 import {
   DevClipboardContainer,
   name,
   type
 } from './modal';
-
-$(window).on('et_builder_api_ready', (event, API) => {
-  API.registerModules(modules);
-  API.registerModalFields(fields);
-});
 
 // Open divi/dev-clipboard, a registered modal, when clipboard menu item on admin bar is clicked.
 // This ensure that the following function is registered on app window.
