@@ -4,6 +4,11 @@ import $ from 'jquery';
 // Internal Dependencies
 import modules from './modules';
 import fields from './fields';
+import {
+  DevClipboardContainer,
+  name,
+  type
+} from './modal';
 
 $(window).on('et_builder_api_ready', (event, API) => {
   API.registerModules(modules);
@@ -12,6 +17,7 @@ $(window).on('et_builder_api_ready', (event, API) => {
 
 // Open divi/dev-clipboard, a registered modal, when clipboard menu item on admin bar is clicked.
 // This ensure that the following function is registered on app window.
+// @todo this top / window detection should be abstracted into util function.
 if (window.top !== window) {
 
   // Listen to click event on top window's admin bar item. The condition above ensures that the
@@ -21,5 +27,12 @@ if (window.top !== window) {
 
     // Open registered modal, divi/dev-clipboard.
     window.wp.data.dispatch('divi/modals').open({ name: 'divi/dev-clipboard' });
+  });
+
+  // On script load, register `divi/clipboard` modal to modals registry.
+  window.divi.data.dispatch('divi/modals').addModal({
+    name,
+    type,
+    component: DevClipboardContainer,
   });
 }
