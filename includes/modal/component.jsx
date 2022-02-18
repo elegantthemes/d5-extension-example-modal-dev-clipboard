@@ -130,8 +130,6 @@ export const DevClipboard = (props) => {
     clipboardItems,
   } = props;
 
-  console.log('WE DANCE!');
-
   return (
     <ErrorBoundary
       key="et-vb-divi-modals--dev-clipboard"
