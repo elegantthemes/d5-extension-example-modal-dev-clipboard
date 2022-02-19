@@ -3,7 +3,7 @@
 Plugin Name: D5i Modal Dev Clipboard
 Plugin URI:
 Description: Modal that displays clipboard data
-Version:     1.0.0
+Version:     0.1.0
 Author:      Elegant Themes
 Author URI:  https://elegantthemes.com
 License:     GPL2
@@ -30,7 +30,7 @@ if ( ! function_exists( 'd5i_initialize_extension' ) ):
 /**
  * Creates the extension's main class instance.
  *
- * @since 1.0.0
+ * @since 0.1.0
  */
 function d5i_initialize_extension() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/D5IModalDevClipboard.php';
@@ -41,7 +41,7 @@ endif;
 /**
  * Add custom item on admin bar for `Clipboard`
  *
- * @since ??
+ * @since 0.1.0
  *
  */
 function d5i_admin_bar_modal_link( $admin_bar ) {

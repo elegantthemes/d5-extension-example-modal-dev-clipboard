@@ -34,7 +34,7 @@ const {
 /**
  * Component for rendering clipboard item's payload item.
  *
- * @since ??
+ * @since 0.1.0
  *
  * @param {PayloadItemProps} param0 Component props.
  *
@@ -60,7 +60,7 @@ const PayloadItem = ({
 /**
  * Component for rendering clipboard item.
  *
- * @since ??
+ * @since 0.1.0
  *
  * @param {ClipboardItemProps} param0 Component props.
  *
@@ -93,7 +93,7 @@ const ClipboardItem = ({
 /**
  * Component for rendering clipboard items.
  *
- * @since ??
+ * @since 0.1.0
  *
  * @param {ClipboardItemsProps} param0 Component props.
  *
@@ -118,7 +118,7 @@ const ClipboardItems = ({ items }) => (
 /**
  * Dev clipboard modal component which visualize the clipboard's state.
  *
- * @since ??
+ * @since 0.1.0
  *
  * @param {Props} props Component props.
  *

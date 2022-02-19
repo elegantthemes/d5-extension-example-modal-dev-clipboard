@@ -5,7 +5,7 @@ class D5I_D5IModalDevClipboard extends DiviExtension {
 	/**
 	 * The gettext domain for the extension's translations.
 	 *
-	 * @since 1.0.0
+	 * @since 0.1.0
 	 *
 	 * @var string
 	 */
@@ -14,7 +14,7 @@ class D5I_D5IModalDevClipboard extends DiviExtension {
 	/**
 	 * The extension's WP Plugin name.
 	 *
-	 * @since 1.0.0
+	 * @since 0.1.0
 	 *
 	 * @var string
 	 */
@@ -23,11 +23,11 @@ class D5I_D5IModalDevClipboard extends DiviExtension {
 	/**
 	 * The extension's version
 	 *
-	 * @since 1.0.0
+	 * @since 0.1.0
 	 *
 	 * @var string
 	 */
-	public $version = '1.0.0';
+	public $version = '0.1.0';
 
 	/**
 	 * D5I_D5IModalDevClipboard constructor.
@@ -45,7 +45,7 @@ class D5I_D5IModalDevClipboard extends DiviExtension {
 	/**
 	 * Sets bundle dependencies.
 	 *
-	 * @since 1.0.0
+	 * @since 0.1.0
 	 */
 	protected function _set_bundle_dependencies() {
 		$this->_bundle_dependencies = array(
