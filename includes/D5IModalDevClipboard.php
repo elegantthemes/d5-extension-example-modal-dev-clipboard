@@ -51,7 +51,10 @@ class D5I_D5IModalDevClipboard extends DiviExtension {
 		$this->_bundle_dependencies = array(
 			// Extension bundle need to be outputted after Divi Builder's script so all the
 			// prerequisite scripts have been available.
-			'builder'  => array( 'et-frontend-builder' ),
+			'builder'  => array(
+				'divi-visual-builder',
+				'divi-object-renderer',
+			),
 			'frontend' => array(),
 		);
 	}

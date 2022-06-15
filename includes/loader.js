@@ -9,18 +9,17 @@ import {
 // This ensure that the following function is registered on app window.
 // @todo this top / window detection should be abstracted into util function.
 if (window.top !== window) {
-
   // Listen to click event on top window's admin bar item. The condition above ensures that the
   // following is only executed in app window.
   window.top.jQuery('#wp-admin-bar-d5i-modal-dev-clipboard a').on('click', (event) => {
     event.preventDefault();
 
     // Open registered modal, divi/dev-clipboard.
-    window.wp.data.dispatch('divi/modals').open({ name: 'divi/dev-clipboard' });
+    window.wp.data.dispatch('divi/modal-library').open({ name: 'divi/dev-clipboard' });
   });
 
   // On script load, register `divi/clipboard` modal to modals registry.
-  window.divi.data.dispatch('divi/modals').addModal({
+  window.divi.data.dispatch('divi/modal-library').addModal({
     name,
     type,
     component: DevClipboardContainer,
