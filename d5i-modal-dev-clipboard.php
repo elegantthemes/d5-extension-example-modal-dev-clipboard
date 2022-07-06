@@ -48,12 +48,22 @@ function d5i_admin_bar_modal_link( $admin_bar ) {
 
 	// Only display this admin bar item on D5i Visual Builder.
 	if ( et_builder_d5_enabled() && et_core_is_fb_enabled() ) {
-    $args = array(
-        'id'    => 'd5i-modal-dev-clipboard',
-        'title' => 'Clipboard',
-        'href'  => '#d5i-clipboard'
-    );
-    $admin_bar->add_node($args);
+        $d5_dev_tools_id = 'd5-dev-tools';
+
+        // Main menu.
+        $admin_bar->add_node( array(
+            'id'    => $d5_dev_tools_id,
+            'title' => __( 'D5 Dev Tools', 'd5-modal-dev-clipboard' ),
+            'href'  => '#',
+        ) );
+
+        // Sub menu.
+        $admin_bar->add_node( array(
+            'parent' => $d5_dev_tools_id,
+            'id'    => 'd5i-modal-dev-clipboard',
+            'title' => 'Clipboard',
+            'href'  => '#d5i-clipboard'
+        ) );
 	}
 }
 add_action( 'admin_bar_menu', 'd5i_admin_bar_modal_link', 600 );
