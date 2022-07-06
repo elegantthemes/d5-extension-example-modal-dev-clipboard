@@ -11,7 +11,7 @@ import {
 if (window.top !== window) {
   // Listen to click event on top window's admin bar item. The condition above ensures that the
   // following is only executed in app window.
-  window.top.jQuery('#wp-admin-bar-d5i-modal-dev-clipboard a').on('click', (event) => {
+  window.top.jQuery('#wp-admin-bar-d5-modal-dev-clipboard a').on('click', (event) => {
     event.preventDefault();
 
     // Open registered modal, divi/dev-clipboard.

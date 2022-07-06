@@ -1,6 +1,6 @@
 <?php
 
-class D5I_D5IModalDevClipboard extends DiviExtension {
+class D5_D5ModalDevClipboard extends DiviExtension {
 
 	/**
 	 * The gettext domain for the extension's translations.
@@ -9,7 +9,7 @@ class D5I_D5IModalDevClipboard extends DiviExtension {
 	 *
 	 * @var string
 	 */
-	public $gettext_domain = 'd5i-modal-dev-clipboard';
+	public $gettext_domain = 'd5-modal-dev-clipboard';
 
 	/**
 	 * The extension's WP Plugin name.
@@ -18,7 +18,7 @@ class D5I_D5IModalDevClipboard extends DiviExtension {
 	 *
 	 * @var string
 	 */
-	public $name = 'd5i-modal-dev-clipboard';
+	public $name = 'd5-modal-dev-clipboard';
 
 	/**
 	 * The extension's version
@@ -30,12 +30,12 @@ class D5I_D5IModalDevClipboard extends DiviExtension {
 	public $version = '0.1.0';
 
 	/**
-	 * D5I_D5IModalDevClipboard constructor.
+	 * D5_D5ModalDevClipboard constructor.
 	 *
 	 * @param string $name
 	 * @param array  $args
 	 */
-	public function __construct( $name = 'd5i-modal-dev-clipboard', $args = array() ) {
+	public function __construct( $name = 'd5-modal-dev-clipboard', $args = array() ) {
 		$this->plugin_dir     = plugin_dir_path( __FILE__ );
 		$this->plugin_dir_url = plugin_dir_url( $this->plugin_dir );
 
@@ -60,4 +60,4 @@ class D5I_D5IModalDevClipboard extends DiviExtension {
 	}
 }
 
-new D5I_D5IModalDevClipboard;
+new D5_D5ModalDevClipboard;
