@@ -17,3 +17,13 @@ This extension is the example of "options 2: Directly use Divi packages from win
 - [package.json configuration of extension that is created using Create Divi Extension](https://github.com/elegantthemes/d5i-modal-dev-clipboard/blob/main/package.json)
 - [Extended class of extension that is based from `DiviExtension` class](https://github.com/elegantthemes/d5i-modal-dev-clipboard/blob/main/includes/D5IModalDevClipboard.php)
 - [Registered onClick event on admin bar item on top window](https://github.com/elegantthemes/d5i-modal-dev-clipboard/blob/main/includes/loader.js)
+
+## Screenshots
+![Click here to open D5 Modal Dev Clipboard](https://user-images.githubusercontent.com/916442/178092961-e336d994-8d1d-46f4-a8d4-39e105abcf0f.png)
+Click here to open D5 Modal Dev Clipboard
+
+![D5 Modal Dev Clipboard empty state.](https://user-images.githubusercontent.com/916442/178092970-c4914c9b-132b-4c08-b115-abaffb601d14.png)
+D5 Modal Dev Clipboard empty state.
+
+![Content and modal features](https://user-images.githubusercontent.com/916442/178092981-18ea10b3-5acf-40f2-a4e2-2b9ea1901bf4.png)
+Content and modal features.
