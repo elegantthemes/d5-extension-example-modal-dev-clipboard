@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: D5 Modal Dev Clipboard
+Plugin Name: D5 Extension Example: Modal Dev Clipboard
 Plugin URI:
 Description: Modal that displays clipboard data
 Version:     0.1.0
@@ -26,44 +26,47 @@ along with D5 Modal Dev Clipboard. If not, see https://www.gnu.org/licenses/gpl-
 */
 
 
-if ( ! function_exists( 'd5_initialize_extension' ) ):
-/**
- * Creates the extension's main class instance.
- *
- * @since 0.1.0
- */
-function d5_initialize_extension() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/D5IModalDevClipboard.php';
-}
-add_action( 'divi_extensions_init', 'd5_initialize_extension' );
+if ( ! function_exists( 'd5_initialize_extension' ) ) :
+	/**
+	 * Creates the extension's main class instance.
+	 *
+	 * @since 0.1.0
+	 */
+	function d5_initialize_extension() {
+		require_once plugin_dir_path( __FILE__ ) . 'includes/D5IModalDevClipboard.php';
+	}
+	add_action( 'divi_extensions_init', 'd5_initialize_extension' );
 endif;
 
 /**
  * Add custom item on admin bar for `Clipboard`
  *
  * @since 0.1.0
- *
  */
 function d5_clipboard_admin_bar_link( $admin_bar ) {
 
 	// Only display this admin bar item on D5 Visual Builder.
 	if ( et_builder_d5_enabled() && et_core_is_fb_enabled() ) {
-        $d5_dev_tools_id = 'd5-dev-tools';
+		$d5_dev_tools_id = 'd5-dev-tools';
 
-        // Main menu.
-        $admin_bar->add_node( array(
-            'id'    => $d5_dev_tools_id,
-            'title' => __( 'D5 Dev Tools', 'd5-modal-dev-clipboard' ),
-            'href'  => '#',
-        ) );
+		// Main menu.
+		$admin_bar->add_node(
+			array(
+				'id'    => $d5_dev_tools_id,
+				'title' => __( 'D5 Dev Tools', 'd5-modal-dev-clipboard' ),
+				'href'  => '#',
+			)
+		);
 
-        // Sub menu.
-        $admin_bar->add_node( array(
-            'parent' => $d5_dev_tools_id,
-            'id'    => 'd5-modal-dev-clipboard',
-            'title' => 'Clipboard',
-            'href'  => '#d5-clipboard'
-        ) );
+		// Sub menu.
+		$admin_bar->add_node(
+			array(
+				'parent' => $d5_dev_tools_id,
+				'id'     => 'd5-modal-dev-clipboard',
+				'title'  => 'Clipboard',
+				'href'   => '#d5-clipboard',
+			)
+		);
 	}
 }
 add_action( 'admin_bar_menu', 'd5_clipboard_admin_bar_link', 600 );

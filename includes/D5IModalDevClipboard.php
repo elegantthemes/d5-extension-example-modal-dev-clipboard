@@ -60,4 +60,4 @@ class D5_D5ModalDevClipboard extends DiviExtension {
 	}
 }
 
-new D5_D5ModalDevClipboard;
+new D5_D5ModalDevClipboard();
