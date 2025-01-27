@@ -1,20 +1,11 @@
 const path = require('path');
 
 module.exports = {
-  // Webpack starts bundling the assets from the following files.
-  // @see https://webpack.js.org/concepts/#entry
   entry: {
     bundle: './src/index.jsx',
     'add-bar-builder-buttons': './src/add-bar-builder-buttons.js',
   },
-
-  // Divi Visual Builder use of scripts that is already enqueued by WordPress and available
-  // in global scope so those scripts don't need to be included on the bundle. For webpack
-  // to recognize those files, the global variable needs to be registered as externals.
-  // These allows global variable listed below to be imported into the module.
-  // @see https://webpack.js.org/configuration/externals/#externals
   externals: {
-    // Third party dependencies.
     jquery: 'jQuery',
     underscore: '_',
     lodash: 'lodash',
@@ -97,7 +88,7 @@ module.exports = {
     extensions: ['.js', '.jsx'],
   },
 
-  // Determine where the created bundles will be outputted.
+  // Determine where the created bundles will be outputted. Here we have two bundles
   // @see https://webpack.js.org/concepts/#output
   output: {
     filename: '[name].js',
