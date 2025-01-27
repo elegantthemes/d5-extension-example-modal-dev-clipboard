@@ -1,0 +1,3 @@
+
+
+import './modals/registerMyModal.js';
