@@ -46,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _container__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./container */ \"./src/modal/container.jsx\");\n\nconsole.log('DevClipboardContainer', _container__WEBPACK_IMPORTED_MODULE_0__.DevClipboardContainer);\nwindow.vendor.wp.hooks.addFilter('divi.modalLibrary.modalMapping', 'divi', modals => {\n  modals.DevClipboard = {\n    name: \"divi/dev-clipboard\",\n    label: \"Clipboard\",\n    type: \"multiInstanceModal\",\n    component: _container__WEBPACK_IMPORTED_MODULE_0__.DevClipboardContainer\n  };\n  return modals;\n});\n\n//# sourceURL=webpack://d5-clipboard-extension/./src/modal/registerDevClipboard.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _container__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./container */ \"./src/modal/container.jsx\");\n\nwindow.vendor.wp.hooks.addFilter('divi.modalLibrary.modalMapping', 'divi', modals => {\n  modals.DevClipboard = {\n    name: \"divi/dev-clipboard\",\n    label: \"Clipboard\",\n    type: \"multiInstanceModal\",\n    component: _container__WEBPACK_IMPORTED_MODULE_0__.DevClipboardContainer\n  };\n  return modals;\n});\n\n//# sourceURL=webpack://d5-clipboard-extension/./src/modal/registerDevClipboard.js?");
 
 /***/ }),
 
