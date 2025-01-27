@@ -30,7 +30,7 @@ function d5_clipboard_enqueue_assets() {
 				'name'   => 'd5-clipboard-builder-bar-button',
 				'version' => '1.0.0',
 				'script' => [
-					'src' => D5_MODAL_DEV_CLIPBOARD_URL . 'visual-builder/build/add-bar-builder-buttons.js',
+					'src' => D5_MODAL_DEV_CLIPBOARD_URL . 'build/add-bar-builder-buttons.js',
 					'deps'               => [
 						'divi-module-library',
 						'divi-vendor-wp-hooks',
@@ -49,7 +49,7 @@ function d5_clipboard_enqueue_assets() {
 				'name'   => 'd5-bundle',
 				'version' => '1.0.0',
 				'script' => [
-					'src' => D5_MODAL_DEV_CLIPBOARD_URL . 'visual-builder/build/bundle.js',
+					'src' => D5_MODAL_DEV_CLIPBOARD_URL . 'build/bundle.js',
 					'deps'               => [
 						'divi-module-library',
 						'divi-vendor-wp-hooks',
