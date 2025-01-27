@@ -9,7 +9,7 @@ import {
     name: 'my-second-button',
     onClick: () => {
       dispatch('divi/modal-library').open({
-        name: 'example/my-modal',
+        name: 'divi/dev-clipboard',
       });
     },
   });

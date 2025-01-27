@@ -9,8 +9,9 @@ import { WrapperContainer, Header, BodyContainer, PanelContainer, FieldWrapper }
  *
  * @returns {ReactElement}
  */
-export const MyModal = ()=> (
-
+export const DevClipboard = () => {
+  console.log('Rendering DevClipboard');
+  return (
     <WrapperContainer
       dimension={null}
       offset={null}
@@ -19,12 +20,12 @@ export const MyModal = ()=> (
       draggable
       resizable
       centered={false}
-      modalName="example/my-modal"
+      modalName="divi/dev-clipboard"
       bodySiblingHeight={null}
     >
-      <Header name={__('My Modal 2', 'et_builder')} />
+      <Header name={__('Clipboard', 'et_builder')} />
       <BodyContainer>
-        <PanelContainer id="my-modal" opened>
+        <PanelContainer id="dev-clipboard" opened>
           <p>Hello from my modal</p>
           <FieldWrapper
             label={__('Field 1', 'et_builder')}
@@ -47,4 +48,5 @@ export const MyModal = ()=> (
         </PanelContainer>
       </BodyContainer>
     </WrapperContainer>
-);
+  );
+};

@@ -1,3 +1,3 @@
 
 
-import './modals/registerMyModal.js';
+import './modal/registerDevClipboard.js';

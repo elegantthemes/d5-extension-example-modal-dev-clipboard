@@ -16,7 +16,7 @@
   \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _divi_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @divi/data */ \"@divi/data\");\n/* harmony import */ var _divi_data__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_divi_data__WEBPACK_IMPORTED_MODULE_0__);\n\nwindow.divi.appUi.registerBuilderBarButton({\n  active: false,\n  iconSvg: {\n    name: 'divi/move'\n  },\n  label: 'My Second Button',\n  order: 20,\n  name: 'my-second-button',\n  onClick: () => {\n    (0,_divi_data__WEBPACK_IMPORTED_MODULE_0__.dispatch)('divi/modal-library').open({\n      name: 'example/my-modal'\n    });\n  }\n});\n\n//# sourceURL=webpack://d5-clipboard-extension/./src/add-bar-builder-buttons.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _divi_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @divi/data */ \"@divi/data\");\n/* harmony import */ var _divi_data__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_divi_data__WEBPACK_IMPORTED_MODULE_0__);\n\nwindow.divi.appUi.registerBuilderBarButton({\n  active: false,\n  iconSvg: {\n    name: 'divi/move'\n  },\n  label: 'My Second Button',\n  order: 20,\n  name: 'my-second-button',\n  onClick: () => {\n    (0,_divi_data__WEBPACK_IMPORTED_MODULE_0__.dispatch)('divi/modal-library').open({\n      name: 'divi/dev-clipboard'\n    });\n  }\n});\n\n//# sourceURL=webpack://d5-clipboard-extension/./src/add-bar-builder-buttons.js?");
 
 /***/ }),
 
