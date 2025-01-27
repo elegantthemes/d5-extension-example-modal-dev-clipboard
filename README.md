@@ -32,3 +32,4 @@ npm run build
 
 ## Preview
 
+![Preview](./assets/devClipboard-preview.mp4)
