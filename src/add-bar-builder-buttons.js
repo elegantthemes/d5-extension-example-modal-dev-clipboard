@@ -3,14 +3,12 @@ import {
   select,
   useSelect
 } from '@divi/data';
-import { getActiveStatus } from './modal/container';
 
 window.divi.appUi.registerBuilderBarButton({
-    active: getActiveStatus,
-    iconSvg: { name: 'divi/dev-clipboard' },
+    iconSvg: { name: 'dev-clipboard' },
     label: 'My Second Button',
     order: 20,
-    name: 'my-second-button',
+    name: 'divi/dev-clipboard',
     onClick: () => {
       if(select('divi/modal-library').getModal('divi/dev-clipboard')?.isActive){
         dispatch('divi/modal-library').close({
