@@ -1,6 +1,5 @@
-.body{
-  background-color: aqua;
-}
-.et-devtool-clipboard-item-payload-item{
-  background-color: red;
+.et-devtool-clipboard-item-type {
+  &.et-devtool-clipboard-item-type--module {
+    background-color: black;
+  }
 }

@@ -64,10 +64,10 @@ function d5_clipboard_enqueue_assets() {
 
     \ET\Builder\VisualBuilder\Assets\PackageBuildManager::register_package_build(
 			[
-				'name'   => 'd5-extension-example-modules-builder-vb-bundle-style',
+				'name'   => 'd5-style-bundle',
 				'version' => '1.0.0',
 				'style' => [
-					'src' => D5_MODAL_DEV_CLIPBOARD_URL . 'build/bundle.css',
+					'src' => D5_MODAL_DEV_CLIPBOARD_URL . 'build/vb-bundle.css',
 					'deps'               => [],
 					'enqueue_top_window' => false,
 					'enqueue_app_window' => true,
