@@ -41,7 +41,7 @@ const PayloadItem = ({
       <ul className="et-devtool-clipboard-item-payload-item-value">
         {isArray(values) || isObject(values)
           ? keys(values).map((key) => (
-              <li key={key}>
+              <li key={key} className='et-devtool-clipboard-item-payload-item-value-item'>
                 {key}: {isString(values[key]) ? values[key] : JSON.stringify(values[key])}
               </li>
             ))

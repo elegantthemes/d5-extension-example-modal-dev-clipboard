@@ -1,13 +1,103 @@
-.et-devtool-clipboard-item-type {
-  &.et-devtool-clipboard-item-type--module {
-    background-color: black;
+// Module options
+$module-options: #4c5866;
+$module-options-shadow: rgba(43, 135, 218, 0.15);
+$row-options: #29c4a9;
+$section-options: #2b87da;
+$section-specialty-options: #ff9232;
+$section-specialty-options-label: #ef5555;
+$section-fullwidth-options: #6c2eb9;
+
+.et-devtool-clipboard {
+  &-items {
+    display: flex;
+    flex-direction: column-reverse;
   }
-}
 
-.et-devtool-clipboard-item-index{
-  background-color: black;
-}
+  &-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(240, 245, 249, 0.6);
+    border-radius: 5px;
+    font-size: 12px;
+    position: relative;
 
-.et-vb-builder-bar-wrap{
-  background-color: green;
+    &:last-child {
+      border: 2px solid $module-options;
+    }
+
+    &-type {
+      display: inline-block;
+      padding: 1px 10px;
+      background-color: $module-options;
+      color: white;
+      border-radius: 3px;
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+
+      &--modules {
+        background-color: $row-options;
+      }
+
+      &--moduleFieldAttribute {
+        background-color: $section-options;
+      }
+
+      &--moduleGroupAttributes {
+        background-color: $section-specialty-options;
+      }
+
+      &--moduleGroupTabAttributes {
+        background-color: $section-fullwidth-options;
+      }
+
+      &--moduleAttributes {
+        background-color: $section-specialty-options-label;
+      }
+    }
+
+    &-index {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 13px;
+      font-weight: bold;
+      color: #bfbfbf;
+    }
+
+    &-origin {
+      font-size: 12px;
+      opacity: .8;
+      margin: 10px 0 0;
+    }
+
+    &-payload {
+      padding: 10px 15px;
+      margin: 10px 0;
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: 5px;
+
+      &-item {
+        margin-bottom: 10px;
+
+        &-title {
+          font-weight: bold;
+          display: block;
+          margin-top: 15px;
+          color: #000;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+        }
+        &-value-item {
+          white-space: nowrap;
+          overflow-x: auto;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
 }
