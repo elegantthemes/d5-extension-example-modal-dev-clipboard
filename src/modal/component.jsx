@@ -141,7 +141,7 @@ export const DevClipboard = (props) => {
         />
         <BodyContainer>
           <PanelContainer id="clipboard" opened>
-            <div className='helloo' style={{
+            <div style={{
               padding: '20px 20px 40px 20px',
               height: 400,
             }}
