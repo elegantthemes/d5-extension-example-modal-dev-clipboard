@@ -69,10 +69,10 @@ function d5_clipboard_enqueue_assets() {
 				'style' => [
 					'src' => D5_MODAL_DEV_CLIPBOARD_URL . 'build/vb-bundle.css',
 					'deps'               => [],
-					'enqueue_top_window' => false,
-					'enqueue_app_window' => true,
+					'enqueue_top_window' => true,
+					'enqueue_app_window' => false,
 				],
-        
+    
 			]
 		);
    

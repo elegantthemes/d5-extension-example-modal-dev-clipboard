@@ -10,16 +10,6 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/modal/style.scss":
-/*!******************************!*\
-  !*** ./src/modal/style.scss ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://d5-clipboard-extension/./src/modal/style.scss?");
-
-/***/ }),
-
 /***/ "./src/icons/dev-clipboard/index.jsx":
 /*!*******************************************!*\
   !*** ./src/icons/dev-clipboard/index.jsx ***!
@@ -77,6 +67,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _container__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./container */ \"./src/modal/container.jsx\");\n/* harmony import */ var _icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../icons */ \"./src/icons/index.js\");\n\n\nwindow.vendor.wp.hooks.addFilter('divi.modalLibrary.modalMapping', 'divi', modals => {\n  modals.DevClipboard = {\n    name: \"divi/dev-clipboard\",\n    label: \"Clipboard\",\n    type: \"multiInstanceModal\",\n    component: _container__WEBPACK_IMPORTED_MODULE_0__.DevClipboardContainer\n  };\n  return modals;\n});\n\n// Add module icons to the icon library.\nwindow.vendor.wp.hooks.addFilter('divi.iconLibrary.icon.map', 'extensionExample', icons => {\n  return {\n    ...icons,\n    // This is important. Without this, all other icons will be overwritten.\n    [_icons__WEBPACK_IMPORTED_MODULE_1__.devClipboard.name]: _icons__WEBPACK_IMPORTED_MODULE_1__.devClipboard\n  };\n});\n\n//# sourceURL=webpack://d5-clipboard-extension/./src/modal/registerDevClipboard.js?");
+
+/***/ }),
+
+/***/ "./src/modal/style.scss":
+/*!******************************!*\
+  !*** ./src/modal/style.scss ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://d5-clipboard-extension/./src/modal/style.scss?");
 
 /***/ }),
 

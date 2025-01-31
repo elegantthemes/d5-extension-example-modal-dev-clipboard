@@ -32,12 +32,6 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: 'thread-loader',
-            options: {
-              workers: -1,
-            },
-          },
-          {
             loader: 'babel-loader',
             options: {
               compact: false,
@@ -48,7 +42,6 @@ module.exports = {
                 }],
                 '@babel/preset-react',
               ],
-              cacheDirectory: false,
             },
           }
         ]
