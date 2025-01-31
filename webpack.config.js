@@ -1,5 +1,5 @@
 const path = require('path');
-
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   entry: {
     bundle: './src/index.jsx',
@@ -77,9 +77,42 @@ module.exports = {
           }
         ]
       },
+      {
+        test: /\.s?css$/i,
+        use: [
+
+          // Loader that enables imported css to be extracted and outputted into its own file.
+          // @see https://webpack.js.org/plugins/mini-css-extract-plugin/#loader-options
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+
+          // Loader that interprets @import and url() like import/require() and resolve them.
+          // @see https://webpack.js.org/loaders/css-loader/
+          {
+            loader: 'css-loader',
+            options: {
+              url: false,
+              importLoaders: 2,
+            },
+          },
+
+          // Loader that loads SASS/SCSS and compiles it into CSS
+          // @see https://webpack.js.org/loaders/sass-loader/
+          {
+            loader: 'sass-loader',
+            options: {
+            },
+          },
+        ],
+      }
     ]
   },
-
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+    }),
+  ],
   // Determine how modules are resolved.
   // @see https://webpack.js.org/configuration/resolve/
   resolve: {

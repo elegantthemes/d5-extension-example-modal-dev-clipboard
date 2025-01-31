@@ -44,6 +44,7 @@ function d5_clipboard_enqueue_assets() {
 			]
 		);
 
+
     \ET\Builder\VisualBuilder\Assets\PackageBuildManager::register_package_build(
 			[
 				'name'   => 'd5-bundle',
@@ -60,6 +61,20 @@ function d5_clipboard_enqueue_assets() {
 				],
 			]
 		);
+
+    \ET\Builder\VisualBuilder\Assets\PackageBuildManager::register_package_build(
+			[
+				'name'   => 'd5-extension-example-modules-builder-vb-bundle-style',
+				'version' => '1.0.0',
+				'style' => [
+					'src' => D5_MODAL_DEV_CLIPBOARD_URL . 'build/bundle.css',
+					'deps'               => [],
+					'enqueue_top_window' => false,
+					'enqueue_app_window' => true,
+				],
+        
+			]
+		);
    
 
     
@@ -67,3 +82,4 @@ function d5_clipboard_enqueue_assets() {
 }
 
 add_action( 'divi_visual_builder_assets_before_enqueue_scripts', 'd5_clipboard_enqueue_assets' );
+

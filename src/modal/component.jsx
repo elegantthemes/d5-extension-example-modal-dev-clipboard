@@ -20,7 +20,7 @@ const {
   ErrorBoundary
 } = window.divi.errorBoundary;
 
-
+import './style.scss';
 
 /**
  * Component for rendering clipboard item's payload item.
@@ -141,7 +141,7 @@ export const DevClipboard = (props) => {
         />
         <BodyContainer>
           <PanelContainer id="clipboard" opened>
-            <div style={{
+            <div className='helloo' style={{
               padding: '20px 20px 40px 20px',
               height: 400,
             }}
