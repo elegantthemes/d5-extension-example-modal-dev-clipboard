@@ -1,10 +1,10 @@
 import {
   dispatch,
   select,
-  useSelect
 } from '@divi/data';
+import { registerBuilderBarButton } from '@divi/app-ui';
 
-window.divi.appUi.registerBuilderBarButton({
+registerBuilderBarButton({
     iconSvg: { name: 'dev-clipboard' },
     label: 'My Second Button',
     order: 20,

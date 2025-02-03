@@ -16,9 +16,9 @@ const {
   map,
 } = window.lodash;
 
-const {
+import {
   ErrorBoundary
-} = window.divi.errorBoundary;
+} from '@divi/error-boundary';
 
 import './style.scss';
 

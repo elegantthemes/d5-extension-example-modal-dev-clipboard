@@ -24,6 +24,8 @@ module.exports = {
     '@divi/module-library': ['divi', 'moduleLibrary'],
     '@divi/app-ui': ['divi', 'appUi'],
     '@divi/style-library': ['divi', 'styleLibrary'],
+    '@divi/error-boundary': ['divi', 'errorBoundary'],
+
   },
   module: {
     rules: [
