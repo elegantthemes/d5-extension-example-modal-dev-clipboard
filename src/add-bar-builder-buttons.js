@@ -7,7 +7,7 @@ import {
 
 registerBuilderBarButton({
   iconSvg: { name: 'dev-clipboard' },
-  label:   'My Second Button',
+  label:   'Dev Clipboard',
   order:   20,
   name:    'divi/dev-clipboard',
   onClick: () => {
