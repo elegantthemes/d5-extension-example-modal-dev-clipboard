@@ -7,13 +7,18 @@ module.exports = {
     'add-bar-builder-buttons': './src/add-bar-builder-buttons.js',
   },
   externals: {
+    // Third-party libraries
     jquery: 'jQuery',
     underscore: '_',
     lodash: 'lodash',
     react: ['vendor', 'React'],
     'react-dom': ['vendor', 'ReactDOM'],
+    
+    // WordPress libraries
     '@wordpress/i18n': ['vendor', 'wp', 'i18n'],
     '@wordpress/hooks': ['vendor', 'wp', 'hooks'],
+
+    // Divi libraries
     '@divi/rest': ['divi', 'rest'],
     '@divi/data': ['divi', 'data'],
     '@divi/module': ['divi', 'module'],
@@ -24,6 +29,7 @@ module.exports = {
     '@divi/module-library': ['divi', 'moduleLibrary'],
     '@divi/app-ui': ['divi', 'appUi'],
     '@divi/style-library': ['divi', 'styleLibrary'],
+    '@divi/error-boundary': ['divi', 'errorBoundary'],
   },
   module: {
     rules: [

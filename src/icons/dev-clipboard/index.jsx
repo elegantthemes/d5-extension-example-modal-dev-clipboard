@@ -1,4 +1,3 @@
-import React, { ReactElement } from 'react';
 
 // Icon data.
 export const name      = 'dev-clipboard'; // Unique name.
