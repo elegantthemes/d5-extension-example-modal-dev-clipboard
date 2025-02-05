@@ -13,7 +13,7 @@ registerBuilderBarButton({
   onClick: () => {
     // Check if the 'divi/dev-clipboard' modal is currently active
     if (select('divi/modal-library').getModal('divi/dev-clipboard')?.isActive) {
-       // If the modal is active, close it
+      // If the modal is active, close it
       dispatch('divi/modal-library').close({
         name: 'divi/dev-clipboard',
       });
