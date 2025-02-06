@@ -16,7 +16,17 @@
   \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _divi_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @divi/data */ \"@divi/data\");\n/* harmony import */ var _divi_data__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_divi_data__WEBPACK_IMPORTED_MODULE_0__);\n\nwindow.divi.appUi.registerBuilderBarButton({\n  active: false,\n  iconSvg: {\n    name: 'divi/move'\n  },\n  label: 'My Second Button',\n  order: 20,\n  name: 'my-second-button',\n  onClick: () => {\n    (0,_divi_data__WEBPACK_IMPORTED_MODULE_0__.dispatch)('divi/modal-library').open({\n      name: 'divi/dev-clipboard'\n    });\n  }\n});\n\n//# sourceURL=webpack://d5-clipboard-extension/./src/add-bar-builder-buttons.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _divi_app_ui__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @divi/app-ui */ \"@divi/app-ui\");\n/* harmony import */ var _divi_app_ui__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_divi_app_ui__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _divi_data__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @divi/data */ \"@divi/data\");\n/* harmony import */ var _divi_data__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_divi_data__WEBPACK_IMPORTED_MODULE_1__);\n\n\n(0,_divi_app_ui__WEBPACK_IMPORTED_MODULE_0__.registerBuilderBarButton)({\n  iconSvg: {\n    name: 'dev-clipboard'\n  },\n  label: 'Dev Clipboard',\n  order: 20,\n  name: 'divi/dev-clipboard',\n  onClick: () => {\n    // Check if the 'divi/dev-clipboard' modal is currently active\n    if ((0,_divi_data__WEBPACK_IMPORTED_MODULE_1__.select)('divi/modal-library').getModal('divi/dev-clipboard')?.isActive) {\n      // If the modal is active, close it\n      (0,_divi_data__WEBPACK_IMPORTED_MODULE_1__.dispatch)('divi/modal-library').close({\n        name: 'divi/dev-clipboard'\n      });\n    } else {\n      // If the modal is not active, open it\n      (0,_divi_data__WEBPACK_IMPORTED_MODULE_1__.dispatch)('divi/modal-library').open({\n        name: 'divi/dev-clipboard'\n      });\n    }\n  }\n});\n\n//# sourceURL=webpack://d5-clipboard-extension/./src/add-bar-builder-buttons.js?");
+
+/***/ }),
+
+/***/ "@divi/app-ui":
+/*!*********************************!*\
+  !*** external ["divi","appUi"] ***!
+  \*********************************/
+/***/ ((module) => {
+
+module.exports = divi.appUi;
 
 /***/ }),
 
