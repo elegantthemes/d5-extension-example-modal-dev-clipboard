@@ -1,4 +1,3 @@
-
 // Icon data.
 export const name      = 'dev-clipboard'; // Unique name.
 export const viewBox   = '0 0 24 24'; // You will need to adjust this to match your SVG.

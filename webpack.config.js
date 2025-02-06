@@ -21,14 +21,9 @@ module.exports = {
     // Divi libraries
     '@divi/rest': ['divi', 'rest'],
     '@divi/data': ['divi', 'data'],
-    '@divi/module': ['divi', 'module'],
-    '@divi/module-utils': ['divi', 'moduleUtils'],
     '@divi/modal': ['divi', 'modal'],
-    '@divi/field-library': ['divi', 'fieldLibrary'],
     '@divi/icon-library': ['divi', 'iconLibrary'],
-    '@divi/module-library': ['divi', 'moduleLibrary'],
     '@divi/app-ui': ['divi', 'appUi'],
-    '@divi/style-library': ['divi', 'styleLibrary'],
     '@divi/error-boundary': ['divi', 'errorBoundary'],
   },
   module: {
