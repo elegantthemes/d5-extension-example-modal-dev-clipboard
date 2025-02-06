@@ -79,4 +79,3 @@ function d5_clipboard_enqueue_assets() {
 }
 
 add_action( 'divi_visual_builder_assets_before_enqueue_scripts', 'd5_clipboard_enqueue_assets' );
-

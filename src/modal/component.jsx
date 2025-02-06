@@ -1,24 +1,16 @@
-import React, { ReactElement, createElement, useState } from 'react';
+import React, { ReactElement, createElement } from 'react';
 import { __ } from '@wordpress/i18n';
-// import { ErrorBoundary } from '@divi/error-boundary';
-import { WrapperContainer, Header, BodyContainer, PanelContainer, FieldWrapper } from '@divi/modal';
-import { v4 as uuid } from 'uuid';
-// import './style.scss';
-// Externals.
-// @todo webpack should be updated for handling the following packages that is exposed
-//       via global so these can be used as component using import instead of accessing global.
-const {
+import { WrapperContainer, Header, BodyContainer, PanelContainer } from '@divi/modal';
+
+import {
   isArray,
   isObject,
-  forEach,
   isString,
   keys,
   map,
-} = window.lodash;
+}  from 'lodash';
 
-import {
-  ErrorBoundary
-} from '@divi/error-boundary';
+import { ErrorBoundary } from '@divi/error-boundary';
 
 import './style.scss';
 

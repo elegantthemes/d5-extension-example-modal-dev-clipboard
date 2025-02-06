@@ -1,3 +1,4 @@
+// Local dependencies.
 import {
   withSelect,
 } from '@divi/data';

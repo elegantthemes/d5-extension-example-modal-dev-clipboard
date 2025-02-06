@@ -13,12 +13,13 @@ module.exports = {
     lodash: 'lodash',
     react: ['vendor', 'React'],
     'react-dom': ['vendor', 'ReactDOM'],
-  
+    
     // WordPress libraries
     '@wordpress/i18n': ['vendor', 'wp', 'i18n'],
     '@wordpress/hooks': ['vendor', 'wp', 'hooks'],
-  
+
     // Divi libraries
+    '@divi/rest': ['divi', 'rest'],
     '@divi/data': ['divi', 'data'],
     '@divi/modal': ['divi', 'modal'],
     '@divi/icon-library': ['divi', 'iconLibrary'],

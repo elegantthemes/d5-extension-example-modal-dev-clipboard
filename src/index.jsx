@@ -1,2 +1,2 @@
-import './modal/registerDevClipboard.js';
-import './icons/index.js';
+import './modal/registerDevClipboard';
+import './icons/index';
