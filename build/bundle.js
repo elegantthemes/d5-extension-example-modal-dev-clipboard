@@ -16,7 +16,7 @@
   \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   component: () => (/* binding */ component),\n/* harmony export */   name: () => (/* binding */ name),\n/* harmony export */   viewBox: () => (/* binding */ viewBox)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\n// Icon data.\nconst name = 'dev-clipboard'; // Unique name.\nconst viewBox = '0 0 24 24'; // You will need to adjust this to match your SVG.\nconst component = (color = '#A2B0C1') => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"path\", {\n  d: \"M16 4H18C19.1046 4 20 4.89543 20 6V20C20 21.1046 19.1046 22 18 22H6C4.89543 22 4 21.1046 4 20V6C4 4.89543 4.89543 4 6 4H8\",\n  strokeWidth: \"2\",\n  strokeLinecap: \"round\",\n  strokeLinejoin: \"round\",\n  stroke: color\n}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"path\", {\n  d: \"M15 2H9C8.44772 2 8 2.44772 8 3V5C8 5.55228 8.44772 6 9 6H15C15.5523 6 16 5.55228 16 5V3C16 2.44772 15.5523 2 15 2Z\",\n  strokeWidth: \"2\",\n  strokeLinecap: \"round\",\n  strokeLinejoin: \"round\",\n  fill: color\n})); // Your SVG path. without the svg tag.\n\n//# sourceURL=webpack://d5-clipboard-extension/./src/icons/dev-clipboard/index.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   component: () => (/* binding */ component),\n/* harmony export */   name: () => (/* binding */ name),\n/* harmony export */   viewBox: () => (/* binding */ viewBox)\n/* harmony export */ });\n// Icon data.\nconst name = 'dev-clipboard'; // Unique name.\nconst viewBox = '0 0 24 24'; // You will need to adjust this to match your SVG.\nconst component = (color = '#A2B0C1') => /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(\"path\", {\n  d: \"M16 4H18C19.1046 4 20 4.89543 20 6V20C20 21.1046 19.1046 22 18 22H6C4.89543 22 4 21.1046 4 20V6C4 4.89543 4.89543 4 6 4H8\",\n  strokeWidth: \"2\",\n  strokeLinecap: \"round\",\n  strokeLinejoin: \"round\",\n  stroke: color\n}), /*#__PURE__*/React.createElement(\"path\", {\n  d: \"M15 2H9C8.44772 2 8 2.44772 8 3V5C8 5.55228 8.44772 6 9 6H15C15.5523 6 16 5.55228 16 5V3C16 2.44772 15.5523 2 15 2Z\",\n  strokeWidth: \"2\",\n  strokeLinecap: \"round\",\n  strokeLinejoin: \"round\",\n  fill: color\n})); // Your SVG path. without the svg tag.\n\n//# sourceURL=webpack://d5-clipboard-extension/./src/icons/dev-clipboard/index.jsx?");
 
 /***/ }),
 
@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modal_registerDevClipboard_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modal/registerDevClipboard.js */ \"./src/modal/registerDevClipboard.js\");\n/* harmony import */ var _icons_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./icons/index.js */ \"./src/icons/index.js\");\n\n\n\n//# sourceURL=webpack://d5-clipboard-extension/./src/index.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modal_registerDevClipboard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modal/registerDevClipboard */ \"./src/modal/registerDevClipboard.js\");\n/* harmony import */ var _icons_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./icons/index */ \"./src/icons/index.js\");\n\n\n\n//# sourceURL=webpack://d5-clipboard-extension/./src/index.jsx?");
 
 /***/ }),
 
@@ -46,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   DevClipboard: () => (/* binding */ DevClipboard)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/i18n */ \"@wordpress/i18n\");\n/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _divi_modal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @divi/modal */ \"@divi/modal\");\n/* harmony import */ var _divi_modal__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_divi_modal__WEBPACK_IMPORTED_MODULE_2__);\n\n\n// import { ErrorBoundary } from '@divi/error-boundary';\n\n\n// import './style.scss';\n// Externals.\n// @todo webpack should be updated for handling the following packages that is exposed\n//       via global so these can be used as component using import instead of accessing global.\nconst {\n  isArray,\n  isObject,\n  forEach,\n  isString,\n  keys,\n  map\n} = window.lodash;\nconst {\n  ErrorBoundary\n} = window.divi.errorBoundary;\n\n/**\n * Component for rendering clipboard item's payload item.\n *\n * @since 0.1.0\n *\n * @param {PayloadItemProps} param0 Component props.\n *\n * @returns {ReactElement}\n */\nconst PayloadItem = ({\n  name,\n  values\n}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n  className: \"et-devtool-clipboard-item-payload-item\"\n}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"details\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"summary\", {\n  className: \"et-devtool-clipboard-item-payload-item-title\"\n}, name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"ul\", {\n  className: \"et-devtool-clipboard-item-payload-item-value\"\n}, isArray(values) || isObject(values) ? keys(values).map(key => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n  key: key\n}, key, \": \", isString(values[key]) ? values[key] : JSON.stringify(values[key]))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", null, values))));\n\n/**\n * Component for rendering clipboard item.\n *\n * @since 0.1.0\n *\n * @param {ClipboardItemProps} param0 Component props.\n *\n * @returns {ReactElement}\n */\nconst ClipboardItem = ({\n  clipboardType,\n  origin,\n  payload,\n  itemIndex\n}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n  className: \"et-devtool-clipboard-item\"\n}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n  className: `et-devtool-clipboard-item-type et-devtool-clipboard-item-type--${clipboardType}`\n}, clipboardType), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n  className: \"et-devtool-clipboard-item-index\"\n}, `#${itemIndex}`), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n  className: \"et-devtool-clipboard-item-origin\"\n}, origin), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n  className: \"et-devtool-clipboard-item-payload\"\n}, keys(payload).map(payloadItemName => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(PayloadItem, {\n  name: payloadItemName,\n  values: payload[payloadItemName],\n  key: `et-devtool-clipboard-item-payload--${payloadItemName}`\n}))));\n\n/**\n * Component for rendering clipboard items.\n *\n * @since 0.1.0\n *\n * @param {ClipboardItemsProps} param0 Component props.\n *\n * @returns {ReactElement}\n */\nconst ClipboardItems = ({\n  items\n}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n  className: \"et-devtool-clipboard-items\"\n}, map(items, (item, itemIndex) => (/*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(ClipboardItem, {\n  clipboardType: item.clipboardType,\n  origin: item.origin,\n  payload: item.payload,\n  key: `et-devtool-clipboard-item--${itemIndex}`,\n  itemIndex\n}))));\n\n/**\n * Dev clipboard modal component which visualize the clipboard's state.\n *\n * @since 0.1.0\n *\n * @param {Props} props Component props.\n *\n * @returns {ReactElement}\n */\nconst DevClipboard = props => {\n  const {\n    name,\n    clipboardItems\n  } = props;\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ErrorBoundary, {\n    key: \"et-vb-divi-modals--dev-clipboard\",\n    componentName: \"et-vb-divi-modals--dev-clipboard\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_divi_modal__WEBPACK_IMPORTED_MODULE_2__.WrapperContainer, {\n    draggable: true,\n    resizable: true,\n    expandable: true,\n    snappable: true,\n    modalName: name\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_divi_modal__WEBPACK_IMPORTED_MODULE_2__.Header, {\n    name: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Clipboard', 'et_builder')\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_divi_modal__WEBPACK_IMPORTED_MODULE_2__.BodyContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_divi_modal__WEBPACK_IMPORTED_MODULE_2__.PanelContainer, {\n    id: \"clipboard\",\n    opened: true\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    style: {\n      padding: '20px 20px 40px 20px',\n      height: 400\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ClipboardItems, {\n    items: clipboardItems\n  }))))));\n};\n\n//# sourceURL=webpack://d5-clipboard-extension/./src/modal/component.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   DevClipboard: () => (/* binding */ DevClipboard)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/i18n */ \"@wordpress/i18n\");\n/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _divi_modal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @divi/modal */ \"@divi/modal\");\n/* harmony import */ var _divi_modal__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_divi_modal__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash */ \"lodash\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _divi_error_boundary__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @divi/error-boundary */ \"@divi/error-boundary\");\n/* harmony import */ var _divi_error_boundary__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_divi_error_boundary__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./style.scss */ \"./src/modal/style.scss\");\n\n\n\n\n\n\n\n/**\n * Component for rendering clipboard item's payload item.\n *\n * @since 0.1.0\n *\n * @param {PayloadItemProps} param0 Component props.\n *\n * @returns {ReactElement}\n */\nconst PayloadItem = ({\n  name,\n  values\n}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n  className: \"et-devtool-clipboard-item-payload-item\"\n}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"details\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"summary\", {\n  className: \"et-devtool-clipboard-item-payload-item-title\"\n}, name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"ul\", {\n  className: \"et-devtool-clipboard-item-payload-item-value\"\n}, (0,lodash__WEBPACK_IMPORTED_MODULE_3__.isArray)(values) || (0,lodash__WEBPACK_IMPORTED_MODULE_3__.isObject)(values) ? (0,lodash__WEBPACK_IMPORTED_MODULE_3__.keys)(values).map(key => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n  key: key,\n  className: \"et-devtool-clipboard-item-payload-item-value-item\"\n}, key, \": \", (0,lodash__WEBPACK_IMPORTED_MODULE_3__.isString)(values[key]) ? values[key] : JSON.stringify(values[key]))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", null, values))));\n\n/**\n * Component for rendering clipboard item.\n *\n * @since 0.1.0\n *\n * @param {ClipboardItemProps} param0 Component props.\n *\n * @returns {ReactElement}\n */\nconst ClipboardItem = ({\n  clipboardType,\n  origin,\n  payload,\n  itemIndex\n}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n  className: \"et-devtool-clipboard-item\"\n}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n  className: `et-devtool-clipboard-item-type et-devtool-clipboard-item-type--${clipboardType}`\n}, clipboardType), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n  className: \"et-devtool-clipboard-item-index\"\n}, `#${itemIndex}`), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n  className: \"et-devtool-clipboard-item-origin\"\n}, origin), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n  className: \"et-devtool-clipboard-item-payload\"\n}, (0,lodash__WEBPACK_IMPORTED_MODULE_3__.keys)(payload).map(payloadItemName => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(PayloadItem, {\n  name: payloadItemName,\n  values: payload[payloadItemName],\n  key: `et-devtool-clipboard-item-payload--${payloadItemName}`\n}))));\n\n/**\n * Component for rendering clipboard items.\n *\n * @since 0.1.0\n *\n * @param {ClipboardItemsProps} param0 Component props.\n *\n * @returns {ReactElement}\n */\nconst ClipboardItems = ({\n  items\n}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n  className: \"et-devtool-clipboard-items\"\n}, (0,lodash__WEBPACK_IMPORTED_MODULE_3__.map)(items, (item, itemIndex) => (/*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(ClipboardItem, {\n  clipboardType: item.clipboardType,\n  origin: item.origin,\n  payload: item.payload,\n  key: `et-devtool-clipboard-item--${itemIndex}`,\n  itemIndex\n}))));\n\n/**\n * Dev clipboard modal component which visualize the clipboard's state.\n *\n * @since 0.1.0\n *\n * @param {Props} props Component props.\n *\n * @returns {ReactElement}\n */\nconst DevClipboard = props => {\n  const {\n    name,\n    clipboardItems\n  } = props;\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_divi_error_boundary__WEBPACK_IMPORTED_MODULE_4__.ErrorBoundary, {\n    key: \"et-vb-divi-modals--dev-clipboard\",\n    componentName: \"et-vb-divi-modals--dev-clipboard\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_divi_modal__WEBPACK_IMPORTED_MODULE_2__.WrapperContainer, {\n    draggable: true,\n    resizable: true,\n    expandable: true,\n    snappable: true,\n    modalName: name\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_divi_modal__WEBPACK_IMPORTED_MODULE_2__.Header, {\n    name: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Clipboard', 'et_builder')\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_divi_modal__WEBPACK_IMPORTED_MODULE_2__.BodyContainer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_divi_modal__WEBPACK_IMPORTED_MODULE_2__.PanelContainer, {\n    id: \"clipboard\",\n    opened: true\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    style: {\n      padding: '20px 20px 40px 20px',\n      height: 400\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ClipboardItems, {\n    items: clipboardItems\n  }))))));\n};\n\n//# sourceURL=webpack://d5-clipboard-extension/./src/modal/component.jsx?");
 
 /***/ }),
 
@@ -56,7 +56,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   DevClipboardContainer: () => (/* binding */ DevClipboardContainer)\n/* harmony export */ });\n/* harmony import */ var _component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./component */ \"./src/modal/component.jsx\");\n// Local dependencies.\n\n\n// Externals.\n// @todo webpack should be updated for handling the following packages that is exposed\n//       via global so these can be used as component using import instead of accessing global.\nconst {\n  withSelect,\n  useSelect\n} = window.divi.data;\nconst DevClipboardContainer = withSelect(selectStore => {\n  const clipboardItems = selectStore('divi/clipboard').getItems();\n  return {\n    clipboardItems\n  };\n})(_component__WEBPACK_IMPORTED_MODULE_0__.DevClipboard);\n\n//# sourceURL=webpack://d5-clipboard-extension/./src/modal/container.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   DevClipboardContainer: () => (/* binding */ DevClipboardContainer)\n/* harmony export */ });\n/* harmony import */ var _divi_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @divi/data */ \"@divi/data\");\n/* harmony import */ var _divi_data__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_divi_data__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./component */ \"./src/modal/component.jsx\");\n// Local dependencies.\n\n\nconst DevClipboardContainer = (0,_divi_data__WEBPACK_IMPORTED_MODULE_0__.withSelect)(selectStore => {\n  const clipboardItems = selectStore('divi/clipboard').getItems();\n  return {\n    clipboardItems\n  };\n})(_component__WEBPACK_IMPORTED_MODULE_1__.DevClipboard);\n\n//# sourceURL=webpack://d5-clipboard-extension/./src/modal/container.jsx?");
 
 /***/ }),
 
@@ -66,7 +66,47 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _container__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./container */ \"./src/modal/container.jsx\");\n/* harmony import */ var _icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../icons */ \"./src/icons/index.js\");\n\n\nwindow.vendor.wp.hooks.addFilter('divi.modalLibrary.modalMapping', 'divi', modals => {\n  modals.DevClipboard = {\n    name: \"divi/dev-clipboard\",\n    label: \"Clipboard\",\n    type: \"multiInstanceModal\",\n    component: _container__WEBPACK_IMPORTED_MODULE_0__.DevClipboardContainer\n  };\n  return modals;\n});\n\n// Add module icons to the icon library.\nwindow.vendor.wp.hooks.addFilter('divi.iconLibrary.icon.map', 'extensionExample', icons => {\n  return {\n    ...icons,\n    // This is important. Without this, all other icons will be overwritten.\n    [_icons__WEBPACK_IMPORTED_MODULE_1__.devClipboard.name]: _icons__WEBPACK_IMPORTED_MODULE_1__.devClipboard\n  };\n});\n\n//# sourceURL=webpack://d5-clipboard-extension/./src/modal/registerDevClipboard.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _wordpress_hooks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/hooks */ \"@wordpress/hooks\");\n/* harmony import */ var _wordpress_hooks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_hooks__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../icons */ \"./src/icons/index.js\");\n/* harmony import */ var _container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./container */ \"./src/modal/container.jsx\");\n\n\n\n(0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_0__.addFilter)('divi.modalLibrary.modalMapping', 'divi', modals => {\n  modals.DevClipboard = {\n    name: 'divi/dev-clipboard',\n    label: 'Dev Clipboard',\n    type: 'multiInstanceModal',\n    component: _container__WEBPACK_IMPORTED_MODULE_2__.DevClipboardContainer\n  };\n  return modals;\n});\n\n// Add module icons to the icon library.\n(0,_wordpress_hooks__WEBPACK_IMPORTED_MODULE_0__.addFilter)('divi.iconLibrary.icon.map', 'extensionExample', icons => ({\n  ...icons,\n  // This is important. Without this, all other icons will be overwritten.\n  [_icons__WEBPACK_IMPORTED_MODULE_1__.devClipboard.name]: _icons__WEBPACK_IMPORTED_MODULE_1__.devClipboard\n}));\n\n//# sourceURL=webpack://d5-clipboard-extension/./src/modal/registerDevClipboard.js?");
+
+/***/ }),
+
+/***/ "./src/modal/style.scss":
+/*!******************************!*\
+  !*** ./src/modal/style.scss ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://d5-clipboard-extension/./src/modal/style.scss?");
+
+/***/ }),
+
+/***/ "lodash":
+/*!*************************!*\
+  !*** external "lodash" ***!
+  \*************************/
+/***/ ((module) => {
+
+module.exports = lodash;
+
+/***/ }),
+
+/***/ "@divi/data":
+/*!********************************!*\
+  !*** external ["divi","data"] ***!
+  \********************************/
+/***/ ((module) => {
+
+module.exports = divi.data;
+
+/***/ }),
+
+/***/ "@divi/error-boundary":
+/*!*****************************************!*\
+  !*** external ["divi","errorBoundary"] ***!
+  \*****************************************/
+/***/ ((module) => {
+
+module.exports = divi.errorBoundary;
 
 /***/ }),
 
@@ -87,6 +127,16 @@ module.exports = divi.modal;
 /***/ ((module) => {
 
 module.exports = vendor.React;
+
+/***/ }),
+
+/***/ "@wordpress/hooks":
+/*!****************************************!*\
+  !*** external ["vendor","wp","hooks"] ***!
+  \****************************************/
+/***/ ((module) => {
+
+module.exports = vendor.wp.hooks;
 
 /***/ }),
 
@@ -126,7 +176,42 @@ module.exports = vendor.wp.i18n;
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/chunk loaded */
+/******/ 	(() => {
+/******/ 		var deferred = [];
+/******/ 		__webpack_require__.O = (result, chunkIds, fn, priority) => {
+/******/ 			if(chunkIds) {
+/******/ 				priority = priority || 0;
+/******/ 				for(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];
+/******/ 				deferred[i] = [chunkIds, fn, priority];
+/******/ 				return;
+/******/ 			}
+/******/ 			var notFulfilled = Infinity;
+/******/ 			for (var i = 0; i < deferred.length; i++) {
+/******/ 				var [chunkIds, fn, priority] = deferred[i];
+/******/ 				var fulfilled = true;
+/******/ 				for (var j = 0; j < chunkIds.length; j++) {
+/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every((key) => (__webpack_require__.O[key](chunkIds[j])))) {
+/******/ 						chunkIds.splice(j--, 1);
+/******/ 					} else {
+/******/ 						fulfilled = false;
+/******/ 						if(priority < notFulfilled) notFulfilled = priority;
+/******/ 					}
+/******/ 				}
+/******/ 				if(fulfilled) {
+/******/ 					deferred.splice(i--, 1)
+/******/ 					var r = fn();
+/******/ 					if (r !== undefined) result = r;
+/******/ 				}
+/******/ 			}
+/******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
@@ -167,12 +252,67 @@ module.exports = vendor.wp.i18n;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		// no baseURI
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"bundle": 0,
+/******/ 			"./vb-bundle": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
+/******/ 		
+/******/ 		// install a JSONP callback for chunk loading
+/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
+/******/ 			var [chunkIds, moreModules, runtime] = data;
+/******/ 			// add "moreModules" to the modules object,
+/******/ 			// then flag all "chunkIds" as loaded and fire callback
+/******/ 			var moduleId, chunkId, i = 0;
+/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
+/******/ 				for(moduleId in moreModules) {
+/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
+/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 					}
+/******/ 				}
+/******/ 				if(runtime) var result = runtime(__webpack_require__);
+/******/ 			}
+/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
+/******/ 			for(;i < chunkIds.length; i++) {
+/******/ 				chunkId = chunkIds[i];
+/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 					installedChunks[chunkId][0]();
+/******/ 				}
+/******/ 				installedChunks[chunkId] = 0;
+/******/ 			}
+/******/ 			return __webpack_require__.O(result);
+/******/ 		}
+/******/ 		
+/******/ 		var chunkLoadingGlobal = self["webpackChunkd5_clipboard_extension"] = self["webpackChunkd5_clipboard_extension"] || [];
+/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
+/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
+/******/ 	})();
+/******/ 	
 /************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.jsx");
+/******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["./vb-bundle"], () => (__webpack_require__("./src/index.jsx")))
+/******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
