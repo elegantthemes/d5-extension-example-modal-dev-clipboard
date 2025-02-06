@@ -60,4 +60,4 @@ Few notes about the project directory structure:
 
 ## Preview
 
-![Preview](./assets/dev-clipbaord-preview.gif)
+![Preview](./assets/dev-clipboard-preview.gif)

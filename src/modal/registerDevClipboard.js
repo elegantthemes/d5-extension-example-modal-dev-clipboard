@@ -7,7 +7,7 @@ import { DevClipboardContainer } from './container';
 addFilter('divi.modalLibrary.modalMapping', 'divi', modals => {
   modals.DevClipboard = {
     name:      'divi/dev-clipboard',
-    label:     'Clipboard',
+    label:     'Dev Clipboard',
     type:      'multiInstanceModal',
     component: DevClipboardContainer,
   };
