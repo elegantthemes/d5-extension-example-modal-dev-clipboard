@@ -4,6 +4,7 @@ import { devClipboard } from '../icons';
 import { DevClipboardContainer } from './container';
 
 
+// Add modal to the modal library.
 addFilter('divi.modalLibrary.modalMapping', 'divi', modals => {
   modals.DevClipboard = {
     name:      'divi/dev-clipboard',
