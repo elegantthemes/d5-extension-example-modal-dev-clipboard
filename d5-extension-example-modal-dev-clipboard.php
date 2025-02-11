@@ -8,65 +8,74 @@ Author:      Elegant Themes
 Author URI:  https://elegantthemes.com
 License:     GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: d5-modal-dev-clipboard
-Domain Path: /languages
-
-D5 Modal Dev Clipboard is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or
-any later version.
-
-D5 Modal Dev Clipboard is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with D5 Modal Dev Clipboard. If not, see https://www.gnu.org/licenses/gpl-2.0.html.
 */
 
 
-if ( ! function_exists( 'd5_initialize_extension' ) ) :
-	/**
-	 * Creates the extension's main class instance.
-	 *
-	 * @since 0.1.0
-	 */
-	function d5_initialize_extension() {
-		require_once plugin_dir_path( __FILE__ ) . 'includes/D5IModalDevClipboard.php';
-	}
-	add_action( 'divi_extensions_init', 'd5_initialize_extension' );
-endif;
+if ( ! defined( 'ABSPATH' ) ) {
+	die( 'Direct access forbidden.' );
+}
+
+// Setup constants.
+define( 'D5_MODAL_DEV_CLIPBOARD_URL', plugin_dir_url( __FILE__ ) );
+
 
 /**
- * Add custom item on admin bar for `Clipboard`
- *
- * @since 0.1.0
+ * Enqueue Divi 5 Visual Builder Assets
  */
-function d5_clipboard_admin_bar_link( $admin_bar ) {
+function d5_clipboard_enqueue_assets() {
+	if ( et_core_is_fb_enabled() && et_builder_d5_enabled() ) {
 
-	// Only display this admin bar item on D5 Visual Builder.
-	if ( et_builder_d5_enabled() && et_core_is_fb_enabled() ) {
-		$d5_dev_tools_id = 'd5-dev-tools';
-
-		// Main menu.
-		$admin_bar->add_node(
-			array(
-				'id'    => $d5_dev_tools_id,
-				'title' => __( 'D5 Dev Tools', 'd5-modal-dev-clipboard' ),
-				'href'  => '#',
-			)
+		\ET\Builder\VisualBuilder\Assets\PackageBuildManager::register_package_build(
+			[
+				'name'    => 'd5-clipboard-builder-bar-button',
+				'version' => '1.0.0',
+				'script'  => [
+					'src'                => D5_MODAL_DEV_CLIPBOARD_URL . 'build/add-bar-builder-buttons.js',
+					'deps'               => [
+						'divi-module-library',
+						'divi-vendor-wp-hooks',
+					],
+					'enqueue_top_window' => false,
+					'enqueue_app_window' => true,
+					'args'               => [
+						'in_footer' => true,
+					],
+				],
+			]
 		);
 
-		// Sub menu.
-		$admin_bar->add_node(
-			array(
-				'parent' => $d5_dev_tools_id,
-				'id'     => 'd5-modal-dev-clipboard',
-				'title'  => 'Clipboard',
-				'href'   => '#d5-clipboard',
-			)
+		\ET\Builder\VisualBuilder\Assets\PackageBuildManager::register_package_build(
+			[
+				'name'    => 'd5-bundle',
+				'version' => '1.0.0',
+				'script'  => [
+					'src'                => D5_MODAL_DEV_CLIPBOARD_URL . 'build/bundle.js',
+					'deps'               => [
+						'divi-module-library',
+						'divi-vendor-wp-hooks',
+					],
+					'enqueue_top_window' => false,
+					'enqueue_app_window' => true,
+
+				],
+			]
 		);
+
+		\ET\Builder\VisualBuilder\Assets\PackageBuildManager::register_package_build(
+			[
+				'name'    => 'd5-style-bundle',
+				'version' => '1.0.0',
+				'style'   => [
+					'src'                => D5_MODAL_DEV_CLIPBOARD_URL . 'build/vb-bundle.css',
+					'deps'               => [],
+					'enqueue_top_window' => true,
+					'enqueue_app_window' => false,
+				],
+
+			]
+		);
+
 	}
 }
-add_action( 'admin_bar_menu', 'd5_clipboard_admin_bar_link', 600 );
+
+add_action( 'divi_visual_builder_assets_before_enqueue_scripts', 'd5_clipboard_enqueue_assets' );

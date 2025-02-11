@@ -1,35 +1,18 @@
-// External dependencies.
-import React, {
-  createElement,
-} from 'react';
+import React, { ReactElement, createElement } from 'react';
+import { __ } from '@wordpress/i18n';
+import { WrapperContainer, Header, BodyContainer, PanelContainer } from '@divi/modal';
 
-// Local dependencies.
-import './style.scss';
-
-// Externals.
-// @todo webpack should be updated for handling the following packages that is exposed
-//       via global so these can be used as component using import instead of accessing global.
-const {
+import {
   isArray,
   isObject,
+  isString,
   keys,
   map,
-} = window.lodash;
-const {
-  __
-} = window.wp.i18n;
-const {
-  WrapperContainer,
-  Header,
-  BodyContainer,
-  PanelContainer,
-} = window.divi.modal;
-const {
-  ErrorBoundary
-} = window.divi.errorBoundary;
-const {
-  ObjectRenderer
-} = window.divi.objectRenderer;
+}  from 'lodash';
+
+import { ErrorBoundary } from '@divi/error-boundary';
+
+import './style.scss';
 
 /**
  * Component for rendering clipboard item's payload item.
@@ -45,15 +28,18 @@ const PayloadItem = ({
   values,
 }) => (
   <div className="et-devtool-clipboard-item-payload-item">
-    <span className="et-devtool-clipboard-item-payload-item-title">{name}</span>
-    <span className="et-devtool-clipboard-item-payload-item-value">
-      {
-        isArray(values) || isObject(values)
-          ? createElement(
-            ObjectRenderer, { values })
-          : values
-      }
-    </span>
+    <details>
+      <summary className="et-devtool-clipboard-item-payload-item-title">{name}</summary>
+      <ul className="et-devtool-clipboard-item-payload-item-value">
+        {isArray(values) || isObject(values)
+          ? keys(values).map((key) => (
+              <li key={key} className='et-devtool-clipboard-item-payload-item-value-item'>
+                {key}: {isString(values[key]) ? values[key] : JSON.stringify(values[key])}
+              </li>
+            ))
+          : <li>{values}</li>}
+      </ul>
+    </details>
   </div>
 );
 
@@ -75,7 +61,7 @@ const ClipboardItem = ({
   <div
     className="et-devtool-clipboard-item"
   >
-    <div cl sName={`et-devtool-clipboard-item-type et-devtool-clipboard-item-type--${clipboardType}`}>{clipboardType}</div>
+    <div className={`et-devtool-clipboard-item-type et-devtool-clipboard-item-type--${clipboardType}`}>{clipboardType}</div>
     <div className="et-devtool-clipboard-item-index">{`#${itemIndex}`}</div>
     <div className="et-devtool-clipboard-item-origin">{origin}</div>
     <div className="et-devtool-clipboard-item-payload">
@@ -125,7 +111,7 @@ const ClipboardItems = ({ items }) => (
  * @returns {ReactElement}
  */
 export const DevClipboard = (props) => {
-  const {
+ const {
     name,
     clipboardItems,
   } = props;

@@ -90,6 +90,12 @@ $section-fullwidth-options: #6c2eb9;
           &:first-child {
             margin-top: 0;
           }
+
+        }
+        &-value-item {
+          white-space: nowrap;
+          overflow-x: auto;
+          text-overflow: ellipsis;
         }
       }
     }

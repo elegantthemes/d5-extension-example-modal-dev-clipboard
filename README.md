@@ -7,23 +7,57 @@ Custom modal for D5 visual builder that displays current content of clipboard.
 
 > Content of clipboard is filled by right click + copy module or copy style.
 
-## Showcased examples
-This extension is the example of "options 2: Directly use Divi packages from window variables" [mentioned on this documentation](https://github.com/elegantthemes/submodule-builder/blob/d5-initial-development/docs/docs/internal/third-party-integration/extending-d5-visual-builder.md#option-2-directly-use-divi-packages-from-window-variables). Technically, examples that can be drawn from this extension samples:
+## Installation
 
-- Custom modal on D5 visual builder extension.
-- D5 visual builder extension that is created using current [Create Divi Extension](https://github.com/elegantthemes/create-divi-extension)
-- [Using D5 packages directly from window variable and use it to create custom modal.](https://github.com/elegantthemes/d5i-modal-dev-clipboard/blob/main/includes/modal/component.jsx)
-- [Using D5 packages directly from window variable to create Higher Order Component that gets data from store and pass it to component](https://github.com/elegantthemes/d5i-modal-dev-clipboard/blob/main/includes/modal/container.js)
-- [package.json configuration of extension that is created using Create Divi Extension](https://github.com/elegantthemes/d5i-modal-dev-clipboard/blob/main/package.json)
-- [Extended class of extension that is based from `DiviExtension` class](https://github.com/elegantthemes/d5i-modal-dev-clipboard/blob/main/includes/D5IModalDevClipboard.php)
-- [Registered onClick event on admin bar item on top window](https://github.com/elegantthemes/d5i-modal-dev-clipboard/blob/main/includes/loader.js)
+### 1. Clone the repository
 
-## Screenshots
-![Click here to open D5 Modal Dev Clipboard](https://user-images.githubusercontent.com/916442/178092961-e336d994-8d1d-46f4-a8d4-39e105abcf0f.png)
-Click here to open D5 Modal Dev Clipboard
+```bash
+git clone https://github.com/elegantthemes/d5i-modal-dev-clipboard
+```
 
-![D5 Modal Dev Clipboard empty state.](https://user-images.githubusercontent.com/916442/178092970-c4914c9b-132b-4c08-b115-abaffb601d14.png)
-D5 Modal Dev Clipboard empty state.
+### 2. Install dependencies
 
-![Content and modal features](https://user-images.githubusercontent.com/916442/178092981-18ea10b3-5acf-40f2-a4e2-2b9ea1901bf4.png)
-Content and modal features.
+```bash
+npm install
+```
+
+### 3. Build the project
+
+```bash
+npm run build
+```
+
+## Project Directory Structure
+
+```
+.github/ 
+    CODEOWNERS
+.gitignore
+assets/
+build/
+    add-bar-builder-buttons.js
+    bundle.js
+d5-extension-example-modal-dev-clipboard.php
+package.json
+README.md
+src/
+    add-bar-builder-buttons.js
+    index.jsx
+    modal/
+        component.jsx
+        container.jsx
+        registerDevClipboard.js
+    Object-rerender/
+webpack.config.js
+```
+Few notes about the project directory structure:
+
+- We have two build files as we need to enqueue  `add-bar-builder-buttons.js` with 'in_footer' set to true and `bundle.js` with 'in_footer' set to false or not added at all.
+
+- If you want to add new buttons to the add bar, you can do so by adding them to `add-bar-builder-buttons.js`.
+- And if you want to add new modals, you can do so by adding them to the `src/modal` directory, taking into account that this was meant for one modal only. You need to add a wrapper directory to contain all modals, then register them in the `src/modal/registerDevClipboard.js` file.
+
+
+## Preview
+
+![Preview](./assets/dev-clipboard-preview.gif)
