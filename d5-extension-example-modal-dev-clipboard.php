@@ -32,8 +32,8 @@ function d5_clipboard_enqueue_assets() {
 				'script'  => [
 					'src'                => D5_MODAL_DEV_CLIPBOARD_URL . 'build/add-bar-builder-buttons.js',
 					'deps'               => [
-						'divi-module-library',
-						'divi-vendor-wp-hooks',
+						'divi-app-ui',
+						'divi-data',
 					],
 					'enqueue_top_window' => false,
 					'enqueue_app_window' => true,
@@ -46,17 +46,17 @@ function d5_clipboard_enqueue_assets() {
 
 		\ET\Builder\VisualBuilder\Assets\PackageBuildManager::register_package_build(
 			[
-				'name'    => 'd5-bundle',
+				'name'    => 'd5-clipboard-bundle',
 				'version' => '1.0.0',
 				'script'  => [
 					'src'                => D5_MODAL_DEV_CLIPBOARD_URL . 'build/bundle.js',
 					'deps'               => [
-						'divi-module-library',
+						'divi-modal',
+						'divi-data', 
 						'divi-vendor-wp-hooks',
 					],
 					'enqueue_top_window' => false,
 					'enqueue_app_window' => true,
-
 				],
 			]
 		);
